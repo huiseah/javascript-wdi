@@ -1,0 +1,15 @@
+%h1 underscore + timers
+%div
+ = text_field_tag 'number', nil, :autofocus => true, :placeholder => '789 or i * i * i'
+ = button_tag 'add number', :id => 'add_number'
+ = button_tag 'square', :id => 'square'
+ = button_tag 'function', :id => 'fn'
+
+
+%div 
+ = button_tag 'start', :id => 'start'
+ = button_tag 'stop', :id => 'stop'
+
+%div#boxes 
+ %div.clear
+

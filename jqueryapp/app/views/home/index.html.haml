@@ -1,0 +1,33 @@
+%h2
+	I &lt;3 jQuery
+
+%h2
+	I &lt;3 kick ass biatch
+
+%h2
+	I &lt;3 dream baby dream big!
+
+%div.one a
+%div.one b
+%div.one c
+
+%div#two d
+
+
+%div.one= text_field_tag 'name', nil, :id => 'name'
+%div.one= submit_tag 'get name', :id => 'btn'
+
+%section#colorchooser
+	%div.one= text_field_tag 'color'
+	%div.one= submit_tag 'get color', :id => 'btncolor'
+
+%section
+	%div.one= submit_tag 'hide', :id => 'hide'
+	%div.one= submit_tag 'show', :id => 'show'
+	%div.one= submit_tag 'toggle', :id => 'toggle'
+
+%section
+	%div.one= text_field_tag 'width', nil, :placeholder => 'width'
+	%div.one= text_field_tag 'height', nil, :placeholder => 'height'
+	%div.one= submit_tag 'calculate', :id => 'calc'
+	%div#area

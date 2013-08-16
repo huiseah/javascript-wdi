@@ -1,0 +1,32 @@
+<p>
+  which: <span id="which"></span>
+</p>
+<p>
+  x: <span id="x"></span>
+  y: <span id="y"></span>
+</p>
+
+<a href="http://dontclickthis.whatingods.name/">dont click this</a>
+
+<div class="one" id="a">1a</div>
+<div class="one" id="b">1b</div>
+<div class="one" id="c">1c</div>
+<div class="two" id="d">2a</div>
+<div class="two" id="e">2b</div>
+
+<div class="list" id="f">
+  <ul>
+    <li id="g">a</li>
+    <li id="h">b</li>
+    <li id="i">c</li>
+    <li id="j"><p id="k"><span id="l">super deep nesting</span></p></li>
+  </ul>
+</div>
+
+<p class="status"></p>
+
+<%= form_tag '/' do %>
+  <%= text_field_tag 'name', nil, :placeholder => 'name' %>
+  <%= text_field_tag 'age', nil, :placeholder => 'age' %>
+  <%= submit_tag 'enter data' %>
+<% end %>

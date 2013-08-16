@@ -1,0 +1,25 @@
+%h1 Paintr
+%p Hold down the Control key to paint.
+
+%div#current.box
+%br
+%div#current_image
+  %img
+
+%br
+
+= text_field_tag 'color', nil, :autofocus => true
+= button_tag 'add color', :id => 'add_color'
+
+%br
+
+= text_field_tag 'image', nil
+= button_tag 'add image', :id => 'add_image'
+
+= button_tag 'clear', :id => 'clear'
+
+%div#colors
+
+%div#images
+
+%div#canvas

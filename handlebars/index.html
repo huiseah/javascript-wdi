@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Handlebars Demo</title>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js"></script>
+  <script src="js/demo.js"></script>
+
+</head>
+<body>
+  <h1>Handlebars Demo</h1>
+
+  <section id="posts">
+  </section>
+
+  <h4>Thank you and good bye</h4>
+
+</body>
+
+<script id="post_template" type="text/x-handlebars-template">
+  <div>
+    <h1>{{ title }} - ${{ priceWithGST price }} inc. GST</h1>
+    <h2>{{ date }}</h2>
+    {{#if author}}
+      {{#with author}}
+        <h3>{{{ fullname firstName lastName }}}</h3>
+      {{/with}}
+    {{else}}
+      <h3>Unknown Author</h3>
+    {{/if}}
+    <p>{{ body }}</p>
+    <ul>
+      {{#each comments}}
+        <li>{{{this}}}</li>
+      {{else}}
+        <li>No comments</li>
+      {{/each}}
+    </ul>
+
+  </div>
+</script>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Backbone Intro</title>
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/underscore-min.js"></script>
+  <script src="js/backbone.js"></script>
+  <script src="js/handlebars.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+  <script src="js/demo.js"></script>
+</head>
+<body>
+  <h1>Backbone Intro</h1>
+
+	<div id="main"></div>
+	<div id="animals"></div>
+
+	<script id="zoo-template" type="text/x-handlebars-template"><h1>Welcome to the Zoo!</h1></script>
+	<script id="animal-template" type="text/x-handlebars-template"><p>The {{type}} lives in the {{ecosystem}}</p>
+	<p><a href="#animals/{{ type }}">Learn More</a></p></script>
+</body>
+</html>
